@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: black;
+  overflow:hidden;
+
+}
+.wrap {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  transform-style: preserve-3d;
+  perspective: 10000px;
+}
+.poster{
+  position: absolute;
+  width: 200px;
+  height: 320px;
+  top: 60px;
+  left: 140px;
+  border-radius: 10px;
+  transform-origin: 50% 50% 0;
+  overflow: hidden;
+  -webkit-box-reflect: below 10px -webkit-linear-gradient(
+    rgba(0,0,0,0),
+    rgba(0,0,0,1)); 
+}
+img{
+  width: 200px;
+  height: 320px;
+  box-shadow: 0 0 10px 1px white;  
+}
+.p1{
+  z-index: 10;
+  animation: spin1 0.5s 1 linear forwards 0s;
+}
+.p2{
+  z-index: 9;
+  animation: spin2 0.5s 1 linear forwards 0.5s;
+}
+.p3{
+  z-index: 8;
+  animation: spin3 0.5s 1 linear forwards 1s;
+}
+.p4{
+  z-index: 7;
+  animation: spin4 0.5s 1 linear forwards 1.5s;
+}
+.p5{
+  z-index: 6;
+  animation: spin5 0.5s 1 linear forwards 2s;
+}
+.p6{
+  z-index: 5;
+  animation: spin6 0.5s 1 linear forwards 2.5s;
+}
+.p7{
+  z-index: 4;
+  animation: spin7 0.5s 1 linear forwards 3s;
+}
+.p8{
+  z-index: 3;
+  animation: spin8 0.5s 1 linear forwards 3.5s;
+}
+.p9{
+  z-index: 2;
+  animation: spin9 0.5s 1 linear forwards 4s;
+}
+.wrap{
+  animation: rotate 8s infinite ease-in-out 4.5s alternate;
+}
+/*transform复合使用时用逗号隔开*/
+@keyframes spin1{
+  from{}
+  to{
+    /*transform: translate3d(257.12px,0,306.4px) rotateY(40deg); */
+    transform:rotateY(400deg) translateZ(400px);
+  }
+}
+@keyframes spin2{
+  from{}
+  to{
+    /*transform: translate3d(393.92px,0,69.44px) rotateY(80deg); */
+    transform:rotateY(440deg) translateZ(400px);
+  }
+}
+@keyframes spin3{
+  from{}
+  to{
+    /*transform: translate3d(346.4px,0,-200px) rotateY(120deg); */
+    transform:rotateY(480deg) translateZ(400px);
+  }
+}
+@keyframes spin4{
+  from{}
+  to{
+    /*transform: translate3d(136.8px,0,-375.88px) rotateY(160deg); */
+    transform:rotateY(520deg) translateZ(400px);
+  }
+}
+@keyframes spin5{
+  from{}
+  to{
+   /* transform: translate3d(-136.8px,0,-375.88px) rotateY(200deg); */
+   transform:rotateY(560deg) translateZ(400px);
+  }
+}
+@keyframes spin6{
+  from{}
+  to{
+    /*transform: translate3d(-346.4px,0,-200px) rotateY(240deg); */
+    transform:rotateY(600deg) translateZ(400px);
+  }
+}
+@keyframes spin7{
+  from{}
+  to{
+   /* transform: translate3d(-393.92px,0,69.44px) rotateY(280deg); */
+   transform:rotateY(640deg) translateZ(400px);
+  }
+}
+@keyframes spin8{
+  from{}
+  to{
+    /*transform: translate3d(-257.12px,0,306.4px) rotateY(320deg); */
+    transform:rotateY(680deg) translateZ(400px);
+  }
+}
+@keyframes spin9{
+  from{}
+  to{
+    /*transform: translate3d(0px,0,400px) rotateY(360deg); */
+    transform:rotateY(720deg) translateZ(400px);
+  }
+}
+@keyframes rotate{
+  0%{transform:rotateX(0) rotateY(0);}
+  100%{transform:  rotateX(20deg) rotateY(-360deg);}
+
+  
+}
+
+/*# sourceMappingURL=h1.css.map */

@@ -1,0 +1,68 @@
+body{background: black;}
+
+.wrap{
+	width: 600px;
+	height: 600px;
+	/*background: black;*/
+	position: relative;
+	transform-style: preserve-3d;
+	perspective: 10000px;
+}
+div{
+	width: 200px;
+	height: 200px;
+	border-radius: 50px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	transform-style: preserve-3d;
+}
+.c>div{
+	box-shadow: 0px 0px 150px rgb(0,255,130);	
+	overflow: hidden;			
+}
+img{
+	width: 200px;
+	height: 200px;
+}
+
+
+.c1{
+	background-color: red;
+	transform: translateZ(100px);
+}
+.c2{
+	background-color: orange;
+	transform: rotateY(90deg) translateZ(100px);
+}
+.c3{
+	background-color: yellow;
+	transform: rotateY(-90deg) translateZ(100px)
+}
+.c4{
+	background-color: green;
+	transform: rotateX(-90deg) translateZ(100px);
+}
+.c5{
+	background-color: lightblue;
+	transform: rotateX(90deg) translateZ(100px);
+}
+.c6{
+	background-color: purple;
+	transform: translateZ(-100px);
+}
+.c{
+
+  transform: translate3d(0px,0px,0px) rotateZ(0deg) rotateX(45deg) rotateY(-45deg)    
+}
+.scroll{
+	animation:spin 3s infinite linear; 
+}
+
+@keyframes spin{
+	from{}
+	to{transform:rotateY(360deg);}
+}
